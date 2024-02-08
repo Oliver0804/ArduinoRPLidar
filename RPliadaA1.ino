@@ -2,12 +2,14 @@
 #include "RPLidar.h"
 
 #include <SoftwareSerial.h>
-#define RX_PIN 2
-#define TX_PIN 3
+#define RX_PIN 21
+#define TX_PIN 22
 SoftwareSerial mySoftwareSerial(RX_PIN, TX_PIN); // RX, TX
 
 // 使用硬件串口Serial1
 RPLidar lidar(&Serial1);
+//SoftwareSerial
+//RPLidar lidar(&mySoftwareSerial);
 
 void setup() {
   // Initialize serial communication with PC

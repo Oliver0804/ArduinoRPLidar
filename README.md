@@ -2,6 +2,11 @@
 ## Overview
 This Arduino library is designed to interface with the RPLidar, a popular 360-degree laser scanner (LIDAR) sensor, particularly useful for robotics and sensing applications. Developed in C++, this library facilitates the communication between an Arduino board and the RPLidar, enabling users to easily retrieve and process LIDAR data. The library provides a straightforward way to initiate scans, read scanned data, and interpret the results for further applications, including real-time mapping and object detection.
 
+![./RPLidarA1/docs/RPLidarA1M8.jpeg](./RPLidarA1/docs/RPLidarA1M8.jpeg)
+
+- RPliadr datasheet:
+https://github.com/Oliver0804/ArduinoRPLidar/blob/main/RPLidarA1/docs/LR001_SLAMTEC_rplidar_protocol_v2.4_en.pdf
+
 ## Features
 - Initialize and configure RPLidar with customizable settings.
 - Start and stop data scanning operations.
@@ -12,7 +17,13 @@ This Arduino library is designed to interface with the RPLidar, a popular 360-de
 Download the library as a ZIP file.
 Open the Arduino IDE, navigate to Sketch > Include Library > Add .ZIP Library, and select the downloaded file.
 Once installed, you can include the library in your Arduino sketches by adding #include <RPLidar.h> at the beginning of your sketch.
+
+
 ## Usage
+![./RPLidarA1/docs/ArduinoMega.jpeg](./RPLidarA1/docs/ArduinoMega.jpeg)
+
+![./RPLidarA1/docs/RPLidar_Pinout.jpeg](./RPLidarA1/docs/RPLidar_Pinout.jpeg)
+
 To use the library, create an RPLidar object and initialize it with the serial pins connected to the RPLidar module. Here is a basic example to start a scan and read data:
 
 ```
@@ -102,8 +113,11 @@ A:317.02 D:257.00
 A:317.56 D:260.75
 A:319.36 D:264.00
 ```
+![./RPLidarA1/docs/expample_output.png](./RPLidarA1/docs/expample_output.png)
+
 
 ## Visualization with Python GUI
+![./RPLidarA1/docs/pythonDemo.png](./RPLidarA1/docs/pythonDemo.png)
 To visualize the LIDAR data, a Python script can be used to create a graphical user interface (GUI). This script reads the serial output from the Arduino and displays the LIDAR scan in real-time.
 
 

@@ -1,0 +1,11 @@
+RPLIDAR		KEYWORD1
+begin			KEYWORD2
+sendCommand		KEYWORD2
+startScan		KEYWORD2
+stopScan		KEYWORD2
+getInfo			KEYWORD2
+getHealth		KEYWORD2
+readResponse	KEYWORD2
+parseDeviceInfo	KEYWORD2
+parseHealthInfo	KEYWORD2
+debugPrintResponse	KEYWORD2
